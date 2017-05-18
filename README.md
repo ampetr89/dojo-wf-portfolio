@@ -7,4 +7,4 @@ Still to do:
 * Add gradient to headers
 * Add shadow to buttons
 
-![Sample portfolio][img/portfolio_assignment.png]
+![Sample portfolio](/img/portfolio_assignment.png)
