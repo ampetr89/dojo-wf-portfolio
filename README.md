@@ -1,6 +1,6 @@
 # Sample portfolio project
 
-This assignment is to replicate the below image using HTML and CSS.
+This assignment is to replicate the below image using HTML and CSS. View my submission here: https://ampetr89.github.io/fake-portfolio/.
 
 Still to do:
 * Replicate the fonts
