@@ -1,0 +1,113 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: rgb(49, 31, 37);
+}
+
+#wrapper{
+	text-align: center;
+}
+h1, h2,  h3, h4{
+	text-align: left;
+	padding-left: .5em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	margin: 0px;
+}
+#header, #wrapper, #footer{
+	padding: 10px;
+	width: 100%;
+}
+#intro, #content{
+	margin: 20px;
+}
+#header, #footer{
+	background-color: white;
+}
+#footer{
+	text-align: center;
+	padding: .5em;
+}
+#footer p{
+	margin: 0px;
+}
+#header h1{
+	display: inline;
+	/*margin: 0px;*/
+	/*margin-right: 700px;*/
+}
+#header h2{
+	display: inline;
+	float: right;
+	clear right;
+	padding-right: 1em;
+	/*margin: 0px;*/
+
+	/*clear: right;*/ /* alan told us to do this i dont know what it does though*/
+	text-align: right;
+	vertical-align: middle;
+
+}
+#intro img{
+	width: 450px;
+	border: 4px gray solid;
+}
+#bio{
+	width: 700px;
+	margin-left: 20px;
+}
+.box{
+	background-color: white;
+	color: black;
+	/*font-size: 1em;*/
+	display: inline-block;
+	vertical-align: top;
+
+}
+.box h3, h4{
+	background-color: gray; /*TODO: should be gradient..*/
+	color: white;
+}
+
+.box.panel{
+	width: 375px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.box p{
+	text-align: left;
+	padding: 5px;
+}
+.box.panel p{
+	font-size: 90%;
+}
+.box.panel.project{
+	height: 375px;
+}
+.box.panel.tech{
+	display: block;
+	text-align: left;
+	padding-bottom: 10px;
+}
+.box.panel.project img{
+	width: 80%;
+}
+.box.panel.tech img{
+	width: 40px;
+	display: inline;
+	padding: 10px 6px 0px 12px;
+}
+.box.panel.tech form{
+	text-align: center;
+	padding-top: 10px;
+}
+.box.panel.tech input[type="submit"]{
+	color:white;
+	background-color: green;
+	border: 2px black solid;
+}
+.icon{
+	width: 20px;
+	vertical-align: middle;
+	margin: 2px;
+}
