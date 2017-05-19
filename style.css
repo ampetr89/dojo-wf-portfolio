@@ -1,11 +1,12 @@
 body{
 	padding: 0px;
 	margin: 0px;
-	background-color: rgb(49, 31, 37);
+	background-color: black;
 }
 #boundary{
 	width: 1000px;
-	text-align: center;
+	margin: 0 auto;
+	background: radial-gradient(#6f5964, #1f0f13);
 }
 
 main{
@@ -17,51 +18,62 @@ h1, h2,  h3, h4{
 	padding-top: .25em;
 	padding-bottom: .25em;
 	margin: 0px;
+	font-family: sans-serif;
 }
-header, main, footer{
-	/*padding: 10px;*/
-	width: 100%;
-}
-header{
-	text-align: left;
-}
-article p{
-	text-align: left;
-	padding-left: 5px;
-}
-#intro, #content{
-	margin: 20px;
-}
-header, footer{
-	background-color: white;
-}
-footer{
-	text-align: center;
-	padding: .5em;
-}
-footer p{
-	margin: 0px;
+p{
+	font-family: sans-serif;
 }
 header h1{
 	display: inline;
-	/*margin: 0px;*/
-	/*margin-right: 700px;*/
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	margin-right: 37%;
 }
-header h2{
+/*#caption{
+	display: inline-block;
+	text-align: right;
+	width: 60%;
+}
+#caption */
+h2{
 	display: inline;
-	float: right;
-	clear right;
+	/*float: right;
+	clear right;*/	
 	padding-right: 1em;
-	/*margin: 0px;*/
-
-	/*clear: right;*/ /* alan told us to do this i dont know what it does though*/
 	text-align: right;
 	vertical-align: middle;
 
 }
+header, main, footer{
+	width: 100%;
+}
+header{
+	text-align: left;
+	background: linear-gradient(to bottom, #f3f3f3, #fdfdfd);
+}
+footer{
+	text-align: center;
+	padding: .5em;
+	background: linear-gradient(to top, #f3f3f3, #fdfdfd);
+}
+footer p{
+	margin: 0px;
+}
+
+article p{
+	text-align: left;
+	padding-left: 8px;
+	padding-right: 8px;
+	/*word-break: break-word; *//*hyphenate wrapped words..>*/
+}
+article a{
+	color: black;
+}
+#intro, #content{
+	margin: 20px;
+}
 #intro img{
 	width: 400px;
-	border: 4px gray solid;
+	border: 4px silver solid;
 }
 #bio{
 	width: 486px;
@@ -77,13 +89,17 @@ header h2{
 
 }
 .box h3, h4{
-	background-color: gray; /*TODO: should be gradient..*/
-	color: white;
+	/*background-color: gray; *//*TODO: should be gradient..*/
+	background: linear-gradient(#a9a8ae,#888694,#a9a8ae);
+	color: #fafcfa;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
 
 .box.panel{
 	width: 292px;
 	display: inline-block;
+	background: linear-gradient(to left, #dbcdda, #fefdfe);
 
 }
 .box.panel:not(:last-child){
@@ -91,9 +107,11 @@ header h2{
 }
 .box.panel p{
 	font-size: 90%;
+	text-align: justify;
 }
 .box.panel.project{
 	height: 350px;
+
 }
 .box.panel.tech{
 	height: 200px;
@@ -108,21 +126,31 @@ header h2{
 .box.panel.tech img{
 	width: 40px;
 	display: inline;
-	margin: 6px; /*10px 6px 0px 12px;*/
+	margin-left: 12px; /*10px 6px 0px 12px;*/
+	margin-top: 8px;
 }
 .box.panel.tech form{
 	text-align: center;
 	padding-top: 10px;
 }
 .box.panel.tech input[type="submit"]{
-	color:white;
-	background-color: green;
+	color:#e8fbfe;
+	background-color: #407d61;
 	border: 2px black solid;
+	padding: .25em;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px 1px silver;
 }
 footer ul li img{
 	width: 20px;
 	vertical-align: middle;
-	margin: 2px;
+	margin: 4px;
+}
+footer a{
+	color: black;
+	font-style: italic;
+	font-family: sans-serif;
 }
 
 .flat-list{
