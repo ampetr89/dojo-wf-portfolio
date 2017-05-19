@@ -3,8 +3,13 @@ body{
 	margin: 0px;
 	background-color: rgb(49, 31, 37);
 }
+#boundary{
+	width: 1000px;
+	text-align: center;
+	border: 2px white dashed;
+}
 
-#wrapper{
+main{
 	text-align: center;
 }
 h1, h2,  h3, h4{
@@ -14,29 +19,36 @@ h1, h2,  h3, h4{
 	padding-bottom: .25em;
 	margin: 0px;
 }
-#header, #wrapper, #footer{
-	padding: 10px;
+header, main, footer{
+	/*padding: 10px;*/
 	width: 100%;
+}
+header{
+	text-align: left;
+}
+article p{
+	text-align: left;
+	padding-left: 5px;
 }
 #intro, #content{
 	margin: 20px;
 }
-#header, #footer{
+header, footer{
 	background-color: white;
 }
-#footer{
+footer{
 	text-align: center;
 	padding: .5em;
 }
-#footer p{
+footer p{
 	margin: 0px;
 }
-#header h1{
+header h1{
 	display: inline;
 	/*margin: 0px;*/
 	/*margin-right: 700px;*/
 }
-#header h2{
+header h2{
 	display: inline;
 	float: right;
 	clear right;
@@ -49,11 +61,12 @@ h1, h2,  h3, h4{
 
 }
 #intro img{
-	width: 450px;
+	width: 400px;
 	border: 4px gray solid;
 }
 #bio{
-	width: 700px;
+	width: 486px;
+	height: 276px;
 	margin-left: 20px;
 }
 .box{
@@ -70,24 +83,25 @@ h1, h2,  h3, h4{
 }
 
 .box.panel{
-	width: 375px;
+	width: 292px;
 	display: inline-block;
-	margin-right: 10px;
+
 }
-.box p{
-	text-align: left;
-	padding: 5px;
+.box.panel:not(:last-child){
+	margin-right: 21px;
 }
 .box.panel p{
 	font-size: 90%;
 }
 .box.panel.project{
-	height: 375px;
+	height: 350px;
 }
 .box.panel.tech{
+	height: 200px;
 	display: block;
 	text-align: left;
-	padding-bottom: 10px;
+	/*padding: 10px;*//
+
 }
 .box.panel.project img{
 	width: 80%;
@@ -95,7 +109,7 @@ h1, h2,  h3, h4{
 .box.panel.tech img{
 	width: 40px;
 	display: inline;
-	padding: 10px 6px 0px 12px;
+	margin: 6px; /*10px 6px 0px 12px;*/
 }
 .box.panel.tech form{
 	text-align: center;
@@ -106,8 +120,17 @@ h1, h2,  h3, h4{
 	background-color: green;
 	border: 2px black solid;
 }
-.icon{
+footer ul li img{
 	width: 20px;
 	vertical-align: middle;
 	margin: 2px;
+}
+
+.flat-list{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.flat-list li{
+	display: inline;
 }
