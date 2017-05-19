@@ -1,10 +1,10 @@
 body{
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	background-color: black;
 }
 #boundary{
-	width: 1000px;
+	width: 980px;
 	margin: 0 auto;
 	background: radial-gradient(#6f5964, #1f0f13);
 }
@@ -17,30 +17,28 @@ h1, h2,  h3, h4{
 	padding-left: .5em;
 	padding-top: .25em;
 	padding-bottom: .25em;
-	margin: 0px;
+	margin: 0;
 	font-family: sans-serif;
 }
 p{
 	font-family: sans-serif;
 }
-header h1{
+h1{
 	display: inline;
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	margin-right: 37%;
+	margin-right: 40%; /* hack to get the caption to be on the right*/
+	vertical-align: middle;
+	position: relative;
+	bottom: 0.2em;
 }
-/*#caption{
-	display: inline-block;
-	text-align: right;
-	width: 60%;
-}
-#caption */
 h2{
+	font-size: 1.25em;
 	display: inline;
-	/*float: right;
-	clear right;*/	
 	padding-right: 1em;
 	text-align: right;
-	vertical-align: middle;
+	vertical-align: bottom;
+	position: relative;
+	bottom: 0.5em;
 
 }
 header, main, footer{
@@ -56,7 +54,7 @@ footer{
 	background: linear-gradient(to top, #f3f3f3, #fdfdfd);
 }
 footer p{
-	margin: 0px;
+	margin: 0;
 }
 
 article p{
@@ -88,8 +86,7 @@ article a{
 	vertical-align: top;
 
 }
-.box h3, h4{
-	/*background-color: gray; *//*TODO: should be gradient..*/
+h3, h4{
 	background: linear-gradient(#a9a8ae,#888694,#a9a8ae);
 	color: #fafcfa;
 	padding-top: 8px;
@@ -117,7 +114,7 @@ article a{
 	height: 200px;
 	display: block;
 	text-align: left;
-	/*padding: 10px;*//
+	/*padding: 10px;*/
 
 }
 .box.panel.project img{
@@ -125,7 +122,7 @@ article a{
 }
 .box.panel.tech img{
 	width: 40px;
-	display: inline;
+	display: inline-block;
 	margin-left: 12px; /*10px 6px 0px 12px;*/
 	margin-top: 8px;
 }
@@ -155,8 +152,8 @@ footer a{
 
 .flat-list{
 	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 .flat-list li{
 	display: inline;
